@@ -3,9 +3,9 @@ import { computed, ref } from 'vue'
 import CustomerList from './components/CustomerList.vue'
 import OrderList from './components/OrderList.vue'
 import OrderDetail from './components/OrderDetail.vue'
-import { customers as initialCustomers } from './data/customers'
-import { materials as initialMaterials } from './data/materials'
-import { orders as initialOrders } from './data/orders'
+import { customers as initialCustomers } from './data/customers.ts'
+import { materials as initialMaterials } from './data/materials.ts'
+import { orders as initialOrders } from './data/orders.ts'
 
 // App owns the data. Children only get props and send events up.
 const customers = ref(initialCustomers.map((c) => ({ ...c })))
